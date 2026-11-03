@@ -1,0 +1,51 @@
+#navbar {
+  width: 244px;
+  height: 100vh; /* 100% wysokości przeglądrki */
+  border-right: 1px solid #dbdbdb;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+#navbar > div {
+  flex: 1;
+}
+
+#sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#navbar ul a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+#navbar ul a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+#navbar ul a:active {
+  opacity: 0.5;
+}
+
+#navbar ul a:active img {
+  scale: 0.95;
+}
+
+#navbar > footer {
+  justify-content: flex-end;
+}
