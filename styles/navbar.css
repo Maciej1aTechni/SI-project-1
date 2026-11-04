@@ -38,6 +38,29 @@
   transition: 0.3s;
 }
 
+#navbar ul li {
+  border-radius: 12px;
+}
+
+#navbar ul li.active {
+  position: relative; /* Wymagane, aby pasek pozycjonował się względem tego elementu */
+  background-color: rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  color: #000000;
+  border-radius: 12px; /* Twoje zaokrąglenie rogów */
+}
+
+/* Tworzymy niezależny pasek obok tekstu */
+#navbar ul li.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15%; /* Odsuwa pasek od górnej krawędzi */
+  height: 70%; /* Sprawia, że pasek jest krótszy niż cały element i nie dotyka rogów */
+  width: 5px; /* Szerokość Twojego dawnego bordera */
+  background-color: #0053a0; /* Kolor bordera */
+  border-radius: 2px; /* Opcjonalnie: delikatne zaokrąglenie końców samego paska */
+
 #navbar ul a:active {
   opacity: 0.5;
 }
