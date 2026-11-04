@@ -14,7 +14,6 @@ div.photos {
 div.photo {
   box-sizing: border-box;
   margin-block: 10px;
-  border: 1px solid black;
   width: 350px;
   height: 300px;
   display: flex;
